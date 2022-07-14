@@ -1,0 +1,42 @@
+.banner {
+  .card-main-table .ant-badge-status-text {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .banner__add {
+    font-size: 1.6rem;
+    color: #006e43;
+    text-decoration: underline;
+  }
+}
+.img-banner {
+  width: 4rem;
+  height: 4rem;
+}
+.title_upload {
+  color: #006e43;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.btn {
+  min-width: 4rem;
+  min-height: 3rem;
+}
+
+.form_list {
+  .ant-form-item {
+    margin-bottom: 0 !important;
+  }
+}
+
+.wrapper__field {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  .ant-upload-list-item-info {
+    max-width: 10rem;
+  }
+}

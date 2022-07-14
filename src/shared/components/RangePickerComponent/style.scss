@@ -1,0 +1,32 @@
+.ant-picker {
+    border: 1px solid #727288;
+    background-color: #2b2b3f;
+    .ant-picker-suffix {
+        color: #ff7506;
+    }
+    .ant-picker-clear {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1790px) {
+    .ant-picker-input{
+        input{
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width: 1650px) {
+    .ant-picker-input{
+        input{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 1615px) {
+    .ant-picker-input{
+        input{
+            font-size: 13px;
+        }
+    }
+}

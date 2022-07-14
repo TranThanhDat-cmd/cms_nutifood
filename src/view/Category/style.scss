@@ -1,0 +1,54 @@
+.form-category {
+  .upload-product {
+    color: #006e43;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+  .category-add {
+    text-decoration: underline;
+    color: #006e43;
+    cursor: pointer;
+    &:hover {
+      color: #0a271c;
+      opacity: 0.5;
+    }
+  }
+  .category-img {
+    width: 16rem;
+  }
+  .row-dragging {
+    background: #fafafa;
+    border: 1px solid #ccc;
+  }
+
+  .row-dragging td {
+    padding: 16px;
+  }
+
+  .row-dragging .drag-visible {
+    visibility: visible;
+  }
+}
+
+.category-modal {
+  width: 80vw !important;
+  top: 2rem;
+  .btn__add {
+    min-width: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .disabled-row {
+    background: #dcdcdc !important;
+    pointer-events: none;
+    .ant-checkbox-wrapper {
+      display: none;
+    }
+    td {
+      background-color: #dcdcdc !important;
+    }
+  }
+}

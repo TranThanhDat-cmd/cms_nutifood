@@ -1,0 +1,110 @@
+.form-permissions {
+  .main-card {
+    display: flex;
+    padding: 2.4rem;
+    justify-content: space-between;
+
+    .permission-box {
+      height: 100%;
+      background: #ffffff;
+      border: 1px solid #dee1e2;
+      box-sizing: border-box;
+      border-radius: 1.6rem;
+      padding: 2.4rem;
+    }
+
+    .main-form {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      .form-note {
+        // float: right;
+      }
+    }
+
+    .main-role {
+      width: 60%;
+      // padding: 0rem;
+      // min-height: 70vh;
+      // overflow: auto;
+      // max-height: 70vh;
+    }
+    .permission-info {
+      width: 40%;
+      margin-right: 5rem;
+    }
+  }
+
+  .button-center__box {
+    margin-top: 2.4rem;
+  }
+
+  .module-item-box {
+    justify-content: space-around;
+    border-bottom: 1px solid #dee1e2;
+    margin-bottom: 2rem;
+
+    .module-item-index,
+    .module-item-title,
+    .ant-checkbox-wrapper {
+      text-align: center;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #091f3a;
+    }
+
+    .module-item-index {
+      padding: 1rem;
+      border-right: 1px solid #dee1e2;
+    }
+
+    .module-item-title {
+      padding: 1rem;
+      border-right: 1px solid #dee1e2;
+    }
+
+    .module-item-checkAll {
+      text-align: center;
+      padding: 1rem;
+      border-right: 1px solid #dee1e2;
+    }
+
+    .module-item-checkbox-group {
+      padding: 1rem;
+      border-right: 1px solid #dee1e2;
+      display: flex;
+      flex-direction: column;
+
+      .ant-checkbox-wrapper {
+        margin-bottom: 2rem;
+
+        &:last-child {
+          margin-bottom: 0rem;
+        }
+      }
+
+      .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .ant-row.module-item-title-box {
+    background: #eaf5fa;
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #1085c5;
+    text-align: center;
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+    justify-content: space-around;
+    align-items: center;
+
+    .ant-col {
+      padding: 1rem;
+      border-right: 1px solid #dee1e2;
+    }
+  }
+}

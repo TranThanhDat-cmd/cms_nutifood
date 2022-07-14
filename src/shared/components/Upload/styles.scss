@@ -1,0 +1,51 @@
+.ant-form-item .ant-upload.ant-upload-drag,
+.ant-upload.ant-upload-drag {
+  background: transparent;
+  border-radius: 7px;
+  border: 1px double #ffac69;
+  height: 40px;
+  width: 150px;
+  span.ant-upload-hint {
+    color: #ffac69;
+  }
+  &:hover {
+    border-color: #f6f6f6;
+  }
+  .ant-upload-btn {
+    padding: 0;
+    display: block;
+  }
+  .ant-upload-drag-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.preview {
+  i {
+    color: #fff;
+  }
+  .anticon.anticon-loading.anticon-spin {
+    color: #ff7506;
+    font-size: 48px;
+  }
+  .img-loading {
+    background: #f6f6f6;
+    opacity: 0.5;
+  }
+  .text-white {
+    color: #fff;
+  }
+  .font-icon-fa {
+    font-size: 1.4rem;
+  }
+}

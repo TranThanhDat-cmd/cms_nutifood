@@ -1,0 +1,18 @@
+export default {
+  'shelf.name': 'Shelf Product',
+  'shelf.video': 'Video',
+  'shelf.createdAt': 'Date Created',
+  'shelf.code': 'Shelf symbol',
+  'shelf.action': 'Action',
+  'shelf.shelfProduct': 'List Shelf Product',
+  'addShelf.product': 'Add new product',
+  'formAddShelf.name': 'Create Shelf',
+  'formInfoShelf.name': 'Shelf Information',
+  'formUpdateShelf.name': 'Update Shelf',
+  'shelf.update': 'Update Shelf',
+  'shelf.info': 'Shelf Information',
+  'shelf.create': 'More Shelf',
+  'shelf.shelfProduct.addButton': 'Add product',
+  'shelf.image': 'Picture',
+  'shelf.query': 'Query',
+};

@@ -1,0 +1,18 @@
+@import "./../../../styles/variable";
+@import "./../../../view/styles/mixin";
+.download-media {
+    margin-bottom: 7px;
+    a{
+        display: flex;
+    }
+    i {
+        color: #fff;
+        font-size: 21px;
+        margin-right: 7px;
+    }
+    .name {
+        color: #fff;
+        width: calc(100% - 10px);
+        @include text-wrap();
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "presets": [
+    "@babel/react",
+    "@babel/typescript",
+    [
+      "@babel/env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-transform-react-constant-elements",
+    "@babel/plugin-transform-react-inline-elements",
+    "@babel/plugin-transform-runtime"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "@babel/react",
+        "@babel/typescript",
+        [
+          "@babel/env",
+          {
+            "modules": "commonjs"
+          }
+        ]
+      ],
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    }
+  }
+}

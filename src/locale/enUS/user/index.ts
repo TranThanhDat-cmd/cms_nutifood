@@ -1,0 +1,15 @@
+export default {
+  'user.fullName': 'User name',
+  'user.emailAddress': 'User email',
+  'user.createdAt': 'Date created',
+  'user.active': 'Status',
+  'user.action': 'Act',
+  'user.selectActive': 'Choose a status',
+  'user.avatar': 'Avatar',
+  'user.role': 'Administered',
+  'user.update': 'Update account',
+  'user.information': 'Account information',
+  'user.create': 'Create new account',
+  'user.upload': 'Upload photos',
+  'user.name': 'User management',
+};

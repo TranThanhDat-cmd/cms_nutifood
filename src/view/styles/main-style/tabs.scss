@@ -1,0 +1,29 @@
+.main-tab {
+    .ant-tabs-nav {
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    .ant-tabs-nav-list {
+        background: $color-white;
+        border-radius: $main-border-radius;
+    }
+
+    .ant-tabs-tab {
+        padding: 0.8rem 0;
+        color: $color-grey-dark-1;
+        margin: 0 3.2rem;
+        font-size: 20px;
+        line-height: 27px;
+
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: $color-primary;
+        font-weight: $font-weight-medium;
+    }
+
+    .ant-tabs-ink-bar {
+        background: $color-primary;
+    }
+}

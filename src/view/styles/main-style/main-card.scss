@@ -1,0 +1,32 @@
+@use 'variable';
+@use 'mixin';
+
+.main-card {
+  background: $color-white;
+  padding: 1.6rem 2.4rem 1rem 2.4rem;
+  border-radius: $main-border-radius;
+
+  h3.card-title {
+    font-weight: $font-weight-medium;
+    font-size: 2rem;
+    color: $color-primary;
+    margin-bottom: 1.6rem;
+    max-width: 90%;
+  }
+}
+
+.main-card.main-form {
+  article.ant-typography {
+    background-color: $color-primary;
+    color: $color-white;
+    font-size: 2rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+  }
+  .main-form__main-title {
+    border-radius: $main-border-radius;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+  }
+}

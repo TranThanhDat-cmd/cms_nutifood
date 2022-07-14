@@ -1,0 +1,15 @@
+@use "variable";
+
+.ant-modal-confirm .ant-modal-body {
+  span.anticon.anticon-exclamation-circle {
+    display: none;
+  }
+  .anticon.ant-notification-notice-icon-error {
+    display: none;
+  }
+}
+
+
+.ant-notification .anticon-close-circle {
+  display: none;
+}

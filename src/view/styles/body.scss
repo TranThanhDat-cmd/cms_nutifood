@@ -1,0 +1,79 @@
+@import "./variable";
+@import "./mixin";
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  font-display: swap;
+  src: local("Helvetica Neue Regular"), local("helvetica-neue-regular"),
+    url("../../shared/assets/font/Helvetica/helvetica-neue-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-display: swap;
+  src: local("Helvetica Neue Bold"), local("helveticaneuebold"),
+    url("../../shared/assets/font/Helvetica/helveticaneuebold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-display: swap;
+  src: local("Helvetica Neue Medium"), local("helveticaneuemedium"),
+    url("../../shared/assets/font/Helvetica/helveticaneuemedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  font-display: swap;
+  src: local("Helvetica Neue Light"), local("helveticaneuelight"),
+    url("../../shared/assets/font/Helvetica/helveticaneuelight.ttf") format("truetype");
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: $main-font-size;
+  font-weight: normal;
+  color: $color-main-text;
+  background-color: $color-background;
+  font-family: $main-font, 'Segoe UI', 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', serif, serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: $color-main-text;
+  transition: 0.2s;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.margin-select {
+  margin-right: 1vw;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+
+@include respond(xl-screen) {
+  html {
+
+    font-size: calc(100vw * 10/1920);
+  }
+}

@@ -1,0 +1,38 @@
+@use "variable";
+$modal-border-radius: 1.6rem;
+
+.main-modal {
+
+  .ant-modal-content,
+  .ant-modal-header {
+    border-radius: $modal-border-radius;
+  }
+
+  .ant-modal-body {
+    padding: 1rem 4rem;
+  }
+
+  .ant-modal-header {
+    border: none;
+    padding: 0 4rem 0;
+    height: 8rem;
+    display: flex;
+    align-content: center;
+    vertical-align: middle;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .ant-modal-title {
+    font-weight: $font-weight-bold;
+    font-size: $fs-5;
+    line-height: 1.5;
+    color: $color-primary;
+  }
+
+  .ant-modal-footer {
+    border-top: none;
+    padding: 3rem 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,26 @@
+.badgeBoolean-success,
+.badgeBoolean-error {
+  padding: 0.6rem 2rem;
+  border-radius: 0.8rem;
+  .ant-badge-status-dot {
+    display: none;
+  }
+}
+
+.badgeBoolean-success {
+  background-color: #e4ffe7;
+  .ant-badge-status-text {
+    color: #00d916;
+    font-size: 1.6rem !important;
+    margin-left: 0;
+  }
+}
+
+.badgeBoolean-error {
+  background-color: #ffe4e4;
+  .ant-badge-status-text {
+    color: #d90000;
+    font-size: 1.6rem !important;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,104 @@
+@import "../styles/variable.scss";
+@import "../styles/mixin.scss";
+
+.page-error {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url("../../shared/assets/images/pageErrorBg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;   
+    object-fit: cover;
+
+    .label-logo-forgot {
+        width: 25%;
+        height: auto;
+        margin: 5rem 0;
+        max-width: 30rem;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .main-content {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+
+        .content__body {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .title-404 {
+                font-weight: $font-weight-bold;
+                font-size: 7.9rem;
+                color: #002E18;
+            }
+            
+            .page-not-found {
+                font-size: $fs-6;
+                line-height: 2.9rem;
+                color: $color-primary-dark;
+                opacity: 0.8;
+            }
+            
+            .note-404 {
+                margin-top: 2.4rem;
+                font-size: $fs-5;
+                line-height: 1.5;
+                color: $color-primary-dark;
+                opacity: 0.6;
+            }
+            .button-group {
+                display: flex;
+                justify-content: center;
+    
+                .normal-button {
+                    margin: 10px;
+                }   
+    
+                .normal-button.btn-return {
+                    color: $color-primary;
+                    background: $color-white;
+                    border: 1px solid $color-primary;
+    
+                    &:hover {
+                        color: $color-white;
+                        background: $color-primary;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+
+/* if screen width less than or equal 1600px */
+@media only screen and (max-width: 1980px) {
+    .main-content .content__body {
+        top: 28% !important;
+    }
+
+    .main-content .content__body {
+        .page-not-found {
+            font-size: $fs-5 !important;
+        }
+
+        .note-404 {
+            font-size: $fs-3 !important;
+        }
+    }
+}

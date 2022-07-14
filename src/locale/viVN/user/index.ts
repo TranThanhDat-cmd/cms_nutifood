@@ -1,0 +1,15 @@
+export default {
+  'user.fullName': 'Tên người dùng',
+  'user.emailAddress': 'Email người dùng',
+  'user.createdAt': 'Ngày tạo',
+  'user.active': 'Trạng thái',
+  'user.action': 'Hành động',
+  'user.selectActive': 'Chọn trạng thái',
+  'user.avatar': 'Hình đại diện',
+  'user.role': 'Quyền quản lý',
+  'user.update': 'Cập nhật tài khoản',
+  'user.information': 'Thông tin tài khoản',
+  'user.create': 'Tạo mới tài khoản',
+  'user.upload': 'Tải ảnh lên',
+  'user.name': 'Quản lý người dùng',
+};

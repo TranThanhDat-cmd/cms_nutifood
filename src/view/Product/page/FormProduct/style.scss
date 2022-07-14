@@ -1,0 +1,73 @@
+.form-product {
+  .product-img {
+    width: 15rem;
+    max-height: 15rem;
+    margin-bottom: 1rem;
+  }
+  .note {
+    font-weight: 600;
+    color: red;
+  }
+  .yDirection {
+    .ant-form-item-label > label {
+      float: right;
+    }
+  }
+  .ant-upload-list-item-card-actions-btn.ant-btn-sm {
+    display: none;
+  }
+  textarea.ant-input {
+    border: 1px solid #d9d9d9 !important;
+  }
+
+  .product_thumbnail {
+    width: 15rem;
+    height: 15rem;
+    cursor: pointer;
+    object-fit: contain;
+    margin-top: 0.8rem;
+  }
+  .form-story {
+    .story__content {
+      position: relative;
+      .story__uploadText {
+        z-index: 1;
+        position: absolute;
+        top: 1.2rem;
+        right: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.6rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        &:hover {
+          background: #cce2fa;
+          color: #222f3e;
+        }
+      }
+    }
+  }
+  .tox-tinymce {
+    width: 100%;
+  }
+  .modal-upload-image {
+    .ant-modal-footer {
+      text-align: center;
+    }
+  }
+
+  .ant-select-selection-overflow-item .ant-select-selection-item {
+    color: #fff;
+    align-items: center;
+  }
+  .ant-select-multiple .ant-select-selection-item-remove > .anticon {
+    color: yellow;
+  }
+
+  .main-form .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    max-height: 20rem;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

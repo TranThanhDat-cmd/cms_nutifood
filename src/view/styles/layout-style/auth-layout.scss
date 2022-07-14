@@ -1,0 +1,223 @@
+@use "variable";
+@use "mixin";
+
+
+div#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+.auth-page {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../shared/assets/images/bg-main.png");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-form .ant-picker-large,
+  .main-form .ant-input-number,
+  .main-form .ant-input,
+  .main-form .ant-input-affix-wrapper {
+    color: $color-main-text;
+  }
+
+  .language__box {
+    position: absolute;
+    right: 2.4rem;
+    top: 2.5rem;
+
+    .select-custom .ant-select .ant-select-selector,
+    .select-custom .ant-select-single .ant-select-selector,
+    .select-custom .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      border: 1px solid $color-sub-text;
+    }
+
+    .select-custom .ant-select .ant-select-selector .ant-select-selection-item,
+    .select-custom .ant-select-single .ant-select-selector .ant-select-selection-item,
+    .select-custom .ant-select:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-item {
+      color: $color-sub-text;
+    }
+
+    .select-custom .ant-select-arrow .anticon>svg {
+      color: $color-sub-text;
+    }
+
+  }
+
+  .main__box {
+    width: 90%;
+    margin: 0 auto;
+
+    @include respond(xxl-screen) {
+      width: 40%;
+    }
+
+    .logo__box {
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 6rem;
+      max-width: 30rem;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .nav-link__bottom {
+    color: $color-main-text;
+    font-size: $fs-2;
+    font-weight: $font-weight-bold;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 3.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+}
+
+.auth-form {
+  border: 1px solid $color-primary;
+  border-radius: $main-border-radius;
+  padding: 4rem 2rem;
+  width: -webkit-fit-content;
+  width: fit-content;
+  width: -moz-fit-content;
+  background: $color-background;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  outline: none;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 90rem;
+  margin-bottom: 9%;
+  text-align: center;
+  flex: 1;
+
+  .remember__login {
+    text-align: left;
+  }
+
+  .main-title {
+    text-align: center;
+    font-style: italic;
+    font-weight: $font-weight-bold;
+    font-size: $fs-5;
+    color: $color-primary;
+    margin-bottom: 6%;
+  }
+
+  .ant-form-item-label>label {
+    color: $color-primary;
+  }
+
+  .ant-checkbox-wrapper {
+    color: $color-main-text;
+  }
+
+  .ant-checkbox-inner {
+    border-color: $color-main-text;
+  }
+
+  .ant-form-item-with-help .ant-form-item-explain {
+    text-align: left;
+  }
+
+  .ant-form-item-has-error :not(.ant-input-disabled):not(.ant-input-borderless).ant-input,
+  .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper,
+  .ant-form-item-has-error :not(.ant-input-number-affix-wrapper-disabled):not(.ant-input-number-affix-wrapper-borderless).ant-input-number-affix-wrapper,
+  .ant-form-item-has-error :not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover,
+  .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:hover,
+  .ant-form-item-has-error :not(.ant-input-number-affix-wrapper-disabled):not(.ant-input-number-affix-wrapper-borderless).ant-input-number-affix-wrapper:hover {
+    background-color: $color-white;
+  }
+
+}
+
+.or-method__box {
+  text-align: center;
+  opacity: 50%;
+  font-size: $fs-1;
+  line-height: 1.5;
+}
+
+
+
+.login-otp-form {
+
+  .ant-btn,
+  button.ant-btn.normal-button,
+  .ant-modal-confirm-btns button.ant-btn,
+  button.ant-btn.cancel-button,
+  .normal-button,
+  .cancel-button {
+    min-width: 25rem;
+  }
+
+  .captcha__box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.2rem;
+  }
+
+  .otp-input__box {
+    .ant-form-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .otp__box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .status-otp {
+      color: #6C7585;
+      font-size: $fs-2;
+      font-weight: $font-weight-normal;
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+
+      .ant-statistic {
+        display: inline-block;
+
+        .ant-statistic-content {
+          font-size: inherit;
+        }
+      }
+    }
+
+    .link-otp {
+      display: block;
+      margin-bottom: 3.2rem;
+      color: $color-secondary-light;
+      font-weight: $font-weight-bold;
+    }
+
+    .error-status {
+      margin-bottom: 0px;
+    }
+
+  }
+
+  .lock-account__box {
+    padding: 1rem;
+
+    p {
+      font-size: $fs-2;
+      font-weight: $font-weight-normal;
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 3.2rem;
+    }
+  }
+}
